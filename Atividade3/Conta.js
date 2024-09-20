@@ -24,13 +24,14 @@ class Conta {
     getSaldo() {
         return this.#saldo;
     }
-    setNumero(numero) {
+    setSaldo(saldo) {
         this.#saldo = saldo;
     }
 
     depositar(valor) {
         if (valor > 0) {
             this.#saldo = valor;
+            console.log("Saldo atual: " + this.#saldo);
         }
         else {
             console.log("Informe um valor válido")
@@ -41,11 +42,12 @@ class Conta {
         if (valor > 0 && this.#saldo >= valor) {
             this.#saldo -= valor;
             console.log("Valor retirado: R$" + valor);
-            console.log("\nSaldo: R$" + this.#saldo);
+            console.log("Saldo: R$" + this.#saldo);
         }
         else {
             console.log("Informe um valor válido");
         }
+        return this.#saldo;
     }
 }
 
