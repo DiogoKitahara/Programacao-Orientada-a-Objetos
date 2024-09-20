@@ -9,5 +9,3 @@ conta1.retirar(200);   // saldo 400
 
 let agencia1 = new AgenciaBancaria();
 agencia1.addConta(conta1);
-agencia1.addConta(agencia1.getConta(222));
-console.log(agencia1.listContas());

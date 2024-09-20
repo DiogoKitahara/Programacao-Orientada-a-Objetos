@@ -21,17 +21,19 @@ class AgenciaBancaria {
     }
 
     getConta(numero) {
-        for (let i = 0; i < this.listContas.length; i++) {
+        for (let i = 0; i < this.#listaConta.length; i++) {
             if (numero == this.#listaConta[i].numero) {
-                return listaConta[i];
+                console.log("Conta encontrada com sucesso");
+                return this.#listaConta[i];
             }
         }
+        console.log("Numero de conta nao encontrada");
     }
 
     listContas() {
         let str = '';
         let contador = 1;
-        for (let i = 0; i < this.listContas.length; i++) {
+        for (let i = 0; i < this.#listaConta.length; i++) {
             let numero = this.#listaConta[i].numero;
             let titular = this.#listaConta[i].titular;
             let saldo = this.#listaConta[i].saldo;
