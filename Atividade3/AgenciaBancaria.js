@@ -1,5 +1,3 @@
-import { Conta } from "./Conta.js";
-
 class AgenciaBancaria {
   listaConta
   codigo
@@ -17,14 +15,14 @@ class AgenciaBancaria {
   }
 
   addConta(objConta) {
-    console.log("Conta Adicionada com sucesso");
+    console.log("Conta adicionada");
     this.listaConta.push(objConta);
   }
 
   getConta(numero) {
     for (let i = 0; i < this.listaConta.length; i++) {
       if (numero == this.listaConta[i].numero) {
-        console.log("Conta encontrada com sucesso");
+        console.log("Conta encontrada e retornada");
         return this.listaConta[i];
       }
     }

@@ -34,7 +34,7 @@ class Conta {
             console.log("Saldo atual: " + this.saldo);
         }
         else {
-            console.log("Informe um valor válido")
+            console.log("Nao foi possivel realizar o deposito, informe um valor válido")
         }
     }
 
@@ -45,7 +45,7 @@ class Conta {
             console.log("Saldo: R$" + this.saldo);
         }
         else {
-            console.log("Informe um valor válido");
+            console.log("Nao foi possivel fazer a retirada, informe um valor valido");
         }
         return this.saldo;
     }
