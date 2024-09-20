@@ -1,3 +1,5 @@
+import { Conta } from "./Conta.js";
+
 class AgenciaBancaria {
   listaConta
   codigo
@@ -15,8 +17,13 @@ class AgenciaBancaria {
   }
 
   addConta(objConta) {
-    console.log("Conta adicionada");
-    this.listaConta.push(objConta);
+    if (objConta instanceof Conta) {
+      console.log("Conta adicionada");
+      this.listaConta.push(objConta);
+    }
+    else {
+      console.log("Conta invalida");
+    }
   }
 
   getConta(numero) {
