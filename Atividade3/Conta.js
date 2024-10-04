@@ -2,7 +2,7 @@ class Conta {
     numero;
     titular;
     saldo;
-
+    
     constructor (numero, titular) {
         this.numero = numero;
         this.titular = titular;
